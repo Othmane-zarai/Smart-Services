@@ -24,6 +24,8 @@ mongoose.connection.once('open', function(){
   console.log("Database working fine");
 })
 require('./routes/auth.routes')(app);
+require('./routes/request.routes')(app);
+require('./routes/response.routes')(app);
 var port = 3000;
 app.listen(port, function(){
   console.info("Server Started on");
