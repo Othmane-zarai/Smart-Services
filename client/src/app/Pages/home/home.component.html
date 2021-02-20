@@ -1,82 +1,89 @@
 <div class="wrapper">
     <!-- Header Start -->
-    <app-header></app-header>
-    <!-- Header End -->
-    
-    
-    <!-- About Start -->
-    <div class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-6">
-                    <div class="about-img">
-                        <img src="img/about.jpg" alt="Image">
-                    </div>
+    <div class="header home">
+        <div class="container-fluid">
+            
+            <app-header></app-header>
+            
+            <div class="hero row align-items-center">
+                <div class="col-md-7">
+                    <h2>La plateforme des artisans de confiance
+                    </h2>
+                    <h2><span></span> </h2>
+                    <p>Comme 96%* de nos clients déjà satisfaits par nos services
+
+                    </p>
+                    <a class="btn" href="">Explorer maintenant</a>
                 </div>
-                <div class="col-lg-7 col-md-6">
-                    <div class="about-text">
-                        <h2><span>10</span> Years Experience</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                        </p>
-                        <a class="btn" href="">Learn More</a>
+                <div class="col-md-5">
+                    <div class="form">
+                        <h3>Commander un service</h3>
+                        <form>
+                            <input class="form-control" type="text" placeholder="Nom complet">
+                            <input class="form-control" type="text" placeholder="Numero de telephone">
+                            <div class="control-group">
+                                <select class="custom-select">
+                                    <option selected>choisir un service</option>
+                                    <option value="1">Plomberie</option>
+                                    <option value="2">Electricité</option>
+                                    <option value="3">Serrurerie</option>
+                                </select>
+                            </div>
+                            <textarea class="form-control" placeholder="Description"></textarea>
+                            <button class="btn btn-block">Commander</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!-- Header End -->
+    
+    
+    
 
 
     <!-- Service Start -->
     <div class="service">
         <div class="container">
             <div class="section-header">
-                <p>Our Services</p>
-                <h2>Provide Services Worldwide</h2>
+                <h2>Nos Services</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/service-1.jpg" alt="Service">
-                        <h3>Flour Cleaning</h3>
+                        <img src="https://st2.depositphotos.com/1476179/6653/v/950/depositphotos_66532899-stock-illustration-symbol-plumbing-and-repair.jpg" alt="Service">
+                        <h3>Plomberie</h3>
                         <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
-                        </p>
-                        <a class="btn" href="">Learn More</a>
+                            Des plombiers de confiance disponibles près de chez vous                        </p>
+                        <a class="btn" href="">Voir plus</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/service-2.jpg" alt="Service">
-                        <h3>Glass Cleaning</h3>
+                        <img src="https://thumbs.dreamstime.com/b/plug-outlet-house-sticker-label-electrician-logo-industry-artisan-116505418.jpg" alt="Service" >
+                        <h3>Electricite</h3>
                         <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
-                        </p>
-                        <a class="btn" href="">Learn More</a>
+                            Des électriciens professionnels soigneusement évalués                        </p>
+                        <a class="btn" href="">Voir plus</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/service-3.jpg" alt="Service">
-                        <h3>Carpet Cleaning</h3>
+                        <img src="data:image/png;base64,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" alt="Service">
+                        <h3>Serrurerie</h3>
                         <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
-                        </p>
-                        <a class="btn" href="">Learn More</a>
+                            Des serruriers sélectionnés pour vos urgences                        </p>
+                        <a class="btn" href="">Voir plus</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/service-4.jpg" alt="Service">
-                        <h3>Toilet Cleaning</h3>
+                        <img src="https://www.toutelasignaletique.com/18184/plaque-porte-alu-ou-pvc-picto-rond-logo-local-menage-5-coloris-au-choix.jpg" alt="Service">
+                        <h3>Menage</h3>
                         <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
-                        </p>
-                        <a class="btn" href="">Learn More</a>
+                            Votre foyer reste propre et confortable et votre linge lavé, repassé et plié.                        </p>
+                        <a class="btn" href="">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -85,500 +92,9 @@
     <!-- Service End -->
     
     
-    <!-- Feature Start -->
-    <div class="feature">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="section-header left">
-                        <p>Why Choose Us</p>
-                        <h2>Expert Cleaners and World Class Services</h2>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                    </p>
-                    <a class="btn" href="">Learn More</a>
-                </div>
-                <div class="col-md-7">
-                    <div class="row align-items-center feature-item">
-                        <div class="col-5">
-                            <img src="img/feature-1.jpg" alt="Feature">
-                        </div>
-                        <div class="col-7">
-                            <h3>Expert Cleaners</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center feature-item">
-                        <div class="col-5">
-                            <img src="img/feature-2.jpg" alt="Feature">
-                        </div>
-                        <div class="col-7">
-                            <h3>Reasonable Prices</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center feature-item">
-                        <div class="col-5">
-                            <img src="img/feature-3.jpg" alt="Feature">
-                        </div>
-                        <div class="col-7">
-                            <h3>Quick & Best Services</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Feature End -->
-    
-    
-    <!-- Team Start -->
-    <div class="team">
-        <div class="container">
-            <div class="section-header">
-                <p>Team Member</p>
-                <h2>Meet Our Expert Cleaners</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-1.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Josh Dunn</h2>
-                            <h3>CEO</h3>
-                            <div class="team-social">
-                                <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-2.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Mollie Ross</h2>
-                            <h3>Team Manager</h3>
-                            <div class="team-social">
-                                <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-3.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Dylan Adams</h2>
-                            <h3>Cleaner</h3>
-                            <div class="team-social">
-                                <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team-4.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Jennifer Page</h2>
-                            <h3>Cleaner</h3>
-                            <div class="team-social">
-                                <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- FAQs Start -->
-    <div class="faqs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="section-header left">
-                        <p>You Might Ask</p>
-                        <h2>Frequently Asked Questions</h2>
-                    </div>
-                    <img src="img/faqs.jpg" alt="Image">
-                </div>
-                <div class="col-md-7">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header">
-                                <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
-                                    <span>1</span> Lorem ipsum dolor sit amet?
-                                </a>
-                            </div>
-                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                    <span>2</span> Lorem ipsum dolor sit amet?
-                                </a>
-                            </div>
-                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                    <span>3</span> Lorem ipsum dolor sit amet?
-                                </a>
-                            </div>
-                            <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                    <span>4</span> Lorem ipsum dolor sit amet?
-                                </a>
-                            </div>
-                            <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                    <span>5</span> Lorem ipsum dolor sit amet?
-                                </a>
-                            </div>
-                            <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <a class="btn" href="">Ask more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FAQs End -->
-    
-    
-    <!-- Pricing Plan Start -->
-    <div class="price">
-        <div class="container">
-            <div class="section-header">
-                <p>Pricing Plan</p>
-                <h2>No Extra Hidden Charges</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="price-item">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <div class="price-title">
-                                <h2>Standard</h2>
-                            </div>
-                            <div class="price-pricing">
-                                <h2><small>$</small>99</h2>
-                            </div>
-                        </div>
-                        <div class="price-body">
-                            <div class="price-des">
-                                <ul>
-                                    <li>3 Bedrooms cleaning</li>
-                                    <li>2 Bathrooms cleaning</li>
-                                    <li>1 Living room Cleaning</li>
-                                    <li>Vacuum Cleaning</li>
-                                    <li>Within 6 Hours</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="price-footer">
-                            <div class="price-action">
-                                <a href=""><i class="fa fa-shopping-cart"></i>Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="price-item featured-item">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="price-title">
-                                <h2>Premium</h2>
-                            </div>
-                            <div class="price-pricing">
-                                <h2><small>$</small>149</h2>
-                            </div>
-                        </div>
-                        <div class="price-body">
-                            <div class="price-des">
-                                <ul>
-                                    <li>5 Bedrooms cleaning</li>
-                                    <li>3 Bathrooms cleaning</li>
-                                    <li>2 Living room Cleaning</li>
-                                    <li>Vacuum Cleaning</li>
-                                    <li>Within 6 Hours</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="price-footer">
-                            <div class="price-action">
-                                <a href=""><i class="fa fa-shopping-cart"></i>Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="price-item">
-                        <div class="price-header">
-                            <div class="price-icon">
-                                <i class="fa fa-gift"></i>
-                            </div>
-                            <div class="price-title">
-                                <h2>Enterprise</h2>
-                            </div>
-                            <div class="price-pricing">
-                                <h2><small>$</small>199</h2>
-                            </div>
-                        </div>
-                        <div class="price-body">
-                            <div class="price-des">
-                                <ul>
-                                    <li>8 Bedrooms cleaning</li>
-                                    <li>5 Bathrooms cleaning</li>
-                                    <li>3 Living room Cleaning</li>
-                                    <li>Vacuum Cleaning</li>
-                                    <li>Within 12 Hours</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="price-footer">
-                            <div class="price-action">
-                                <a href=""><i class="fa fa-shopping-cart"></i>Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Pricing Plan End -->
-    
-    
-    <!-- Newsletter Start -->
-    <div class="newsletter">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h2>Get A Free Quote</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet adipiscing elit
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <div class="form">
-                        <input class="form-control" placeholder="Email here">
-                        <button class="btn">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Newsletter End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="testimonial">
-        <div class="container">
-            <div class="section-header">
-                <p>Client Review</p>
-                <h2>Client Says About Service</h2>
-            </div>
-            <div class="owl-carousel testimonials-carousel">
-                <div class="testimonial-item">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial-1.jpg" alt="">
-                    </div>
-                    <div class="testimonial-content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                        </p>
-                        <h3>Customer Name</h3>
-                        <h4>Profession</h4>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial-2.jpg" alt="">
-                    </div>
-                    <div class="testimonial-content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                        </p>
-                        <h3>Customer Name</h3>
-                        <h4>Profession</h4>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial-3.jpg" alt="">
-                    </div>
-                    <div class="testimonial-content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                        </p>
-                        <h3>Customer Name</h3>
-                        <h4>Profession</h4>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-img">
-                        <img src="img/testimonial-4.jpg" alt="">
-                    </div>
-                    <div class="testimonial-content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                        </p>
-                        <h3>Customer Name</h3>
-                        <h4>Profession</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-    
-    
-    <!-- Call to Action Start -->
-    <div class="call-to-action">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-9">
-                    <h2>Get A Free Cleaning Service</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <a class="btn" href="https://htmlcodex.com/contact">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Call to Action End -->
-
-
-    <!-- Blog Start -->
-    <div class="blog">
-        <div class="container">
-            <div class="section-header">
-                <p>Latest From Blog</p>
-                <h2>Stay Updated From Our Blog</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-item">
-                        <img src="img/blog-1.jpg" alt="Blog">
-                        <h3>Lorem ipsum dolor</h3>
-                        <div class="meta">
-                            <i class="fa fa-list-alt"></i>
-                            <a href="">Flour Cleaning</a>
-                            <i class="fa fa-calendar-alt"></i>
-                            <p>11-Jun-20</p>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum
-                        </p>
-                        <a class="btn" href="">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-item">
-                        <img src="img/blog-2.jpg" alt="Blog">
-                        <h3>Lorem ipsum dolor</h3>
-                        <div class="meta">
-                            <i class="fa fa-list-alt"></i>
-                            <a href="">Glass Cleaning</a>
-                            <i class="fa fa-calendar-alt"></i>
-                            <p>11-Jun-20</p>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum
-                        </p>
-                        <a class="btn" href="">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-item">
-                        <img src="img/blog-3.jpg" alt="Blog">
-                        <h3>Lorem ipsum dolor</h3>
-                        <div class="meta">
-                            <i class="fa fa-list-alt"></i>
-                            <a href="">Carpet Cleaning</a>
-                            <i class="fa fa-calendar-alt"></i>
-                            <p>11-Jun-20</p>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum
-                        </p>
-                        <a class="btn" href="">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
-
 
     <!-- Footer Start -->
     <app-footer></app-footer>
     <!-- Footer End -->
-    
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </div>

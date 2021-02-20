@@ -9,6 +9,7 @@ import { ServiceComponent } from './Pages/service/service.component';
 import { CommandeComponent } from './Pages/commande/commande.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { LoginComponent } from './Pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { FooterComponent } from './Components/footer/footer.component';
     HomeComponent,
     AboutComponent,  
     ServiceComponent, 
-    CommandeComponent, HeaderComponent, FooterComponent
+    CommandeComponent, HeaderComponent, FooterComponent, LoginComponent
   ],
   imports: [
     BrowserModule,

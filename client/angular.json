@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/assets/css/style.css"
+
             ],
             "scripts": [
               "src/assets/js/main.js"
