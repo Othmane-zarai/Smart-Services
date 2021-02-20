@@ -3,21 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ServiceComponent } from './service/service.component';
-import { CommandeComponent } from './commande/commande.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { AboutComponent } from './Pages/about/about.component';
+import { ServiceComponent } from './Pages/service/service.component';
+import { CommandeComponent } from './Pages/commande/commande.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-  
-    AboutComponent,
-  
-    ServiceComponent,
-  
-    CommandeComponent
+    AboutComponent,  
+    ServiceComponent, 
+    CommandeComponent, HeaderComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
