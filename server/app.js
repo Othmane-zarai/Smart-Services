@@ -5,16 +5,21 @@ var session = require('express-session');
 var mongoose = require('mongoose');
 var config = require('./config/database');
 const db = require('./models');
+const cors = require('cors');
 //init app
 var app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
-
+var corsOptions = {
+  origin: 'http://localhost:4200',
+  optionsSuccessStatus: 200 // For legacy browser support
+}
 //adding primary session
+app.use(cors(corsOptions));
 app.use(session({
   secret:'keyboard cat',
-  resave:false,
+  resave:true,
   saveUnitialized:true,
   cookie:{secure: true}
 }))

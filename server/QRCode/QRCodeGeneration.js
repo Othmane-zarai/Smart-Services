@@ -1,5 +1,5 @@
 var QRCode = require('qrcode');
-
+var generateRandomCode = require('./CodeGeneration');
 const generateQRCode = async text => {
     try{
         console.log(await QRCode.toDataURL(text));
@@ -24,7 +24,7 @@ const printQRCode = async text => {
     }
 }
 //Generate Data about Request
-printQRCode("This is a test");
-generateQRCode("This is a test");
+printQRCode(generateRandomCode);
+generateQRCode(generateRandomCode);
 module.exports = generateQRCode;
 module.exports = printQRCode;

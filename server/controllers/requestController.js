@@ -1,10 +1,12 @@
 const Request = require('../models/Request');
+const generateRandomCode = require('../QRCode/CodeGeneration');
 exports.create = function(req, res){
      const request = new Request({
          serviceType: req.body.serviceType,
          lat: req.body.lat,
          lng: req.body.lng,
-         description: req.body.description
+         description: req.body.description,
+         code:generateRandomCode
      });
      request.save()
          .then(function(createdRequest){
@@ -28,6 +30,7 @@ exports.update = function(req, res){
             request.lat = req.body.lat || request.lat;
             request.lng = req.body.lng || request.lng;
             request.description = req.body.description || request.description;
+            request.code = generateRandomCode;
             request.save()
                .then(function(updatedRequest){
                    return res.status(200).json({
