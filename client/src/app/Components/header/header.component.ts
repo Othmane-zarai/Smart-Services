@@ -12,8 +12,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.authService.isUserLoggedIn()){
-      this.buttonVal=sessionStorage.getItem('username');
+      if(sessionStorage.getItem('username')!=null){this.buttonVal=sessionStorage.getItem('username');}
     }
+    this.buttonVal="Se connecter";
   }
 
 }
