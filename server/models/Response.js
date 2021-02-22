@@ -8,6 +8,10 @@ const ResponseSchema = mongoose.Schema({
     status:{
         type:String,
         required:true
+    },
+    price:{
+        type:Number,
+        required:true
     }
 })
 const Response = mongoose.model('Response',ResponseSchema);

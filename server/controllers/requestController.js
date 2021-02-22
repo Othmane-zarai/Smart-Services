@@ -2,9 +2,11 @@ const Request = require('../models/Request');
 const generateRandomCode = require('../QRCode/CodeGeneration');
 exports.create = function(req, res){
      const request = new Request({
+         username:req.body.username,
          serviceType: req.body.serviceType,
          lat: req.body.lat,
          lng: req.body.lng,
+         address:req.body.address,
          description: req.body.description,
          code:generateRandomCode
      });

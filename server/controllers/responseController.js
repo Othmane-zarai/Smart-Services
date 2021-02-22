@@ -2,7 +2,8 @@ const Response = require('../models/Response');
 exports.create = function(req, res){
      const response = new Response({
          assitants: req.body.assitants,
-         status: req.body.status
+         status: req.body.status,
+         price:req.body.price
      });
      response.save()
          .then(function(createdResponse){

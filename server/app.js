@@ -31,6 +31,8 @@ mongoose.connection.once('open', function(){
 require('./routes/auth.routes')(app);
 require('./routes/request.routes')(app);
 require('./routes/response.routes')(app);
+require('./routes/claim.routes')(app);
+require('./routes/qrcode.routes')(app);
 var port = 3000;
 app.listen(port, function(){
   console.info("Server Started on");
