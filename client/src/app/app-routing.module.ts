@@ -8,6 +8,8 @@ import { LoginComponent } from './Pages/login/login.component';
 import { ProfileComponent } from './Pages/profile/profile.component';
 import { CommandesComponent } from './Pages/commandes/commandes.component';
 import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.component';
+import { AssistantProfileComponent } from './Pages/assistant-profile/assistant-profile.component';
+import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
 
 const routes: Routes = [
   {
@@ -15,7 +17,7 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path:"/adminDemandes",
+    path:"adminDemandes",
     component:AdminDemandsComponent
   },
   {
@@ -41,6 +43,14 @@ const routes: Routes = [
   {
     path:"profile",
     component:ProfileComponent
+  },
+  {
+    path:"assistantprofile",
+    component:AssistantProfileComponent
+  },
+  {
+    path:"adminprofile",
+    component:AdminProfileComponent
   }
 ]
 

@@ -16,13 +16,15 @@ import { ProfileComponent } from './Pages/profile/profile.component';
 import { CommandesComponent } from './Pages/commandes/commandes.component';
 import { EditProfileComponent } from './Pages/edit-profile/edit-profile.component';
 import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.component';
+import { AssistantProfileComponent } from './Pages/assistant-profile/assistant-profile.component';
+import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,  
     ServiceComponent, 
-    HeaderComponent, FooterComponent, LoginComponent, ContactComponent, ProfileComponent, CommandesComponent, EditProfileComponent, AdminDemandsComponent
+    HeaderComponent, FooterComponent, LoginComponent, ContactComponent, ProfileComponent, CommandesComponent, EditProfileComponent, AdminDemandsComponent, AssistantProfileComponent, AdminProfileComponent
   ],
   imports: [
     BrowserModule,
