@@ -12,13 +12,16 @@ import { ContactComponent } from './Pages/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BasicAuthHttpInterceptorService } from './services/basic-auth-http-interceptor-service.service';
+import { ProfileComponent } from './Pages/profile/profile.component';
+import { CommandesComponent } from './Pages/commandes/commandes.component';
+import { EditProfileComponent } from './Pages/edit-profile/edit-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,  
     ServiceComponent, 
-    HeaderComponent, FooterComponent, LoginComponent, ContactComponent
+    HeaderComponent, FooterComponent, LoginComponent, ContactComponent, ProfileComponent, CommandesComponent, EditProfileComponent
   ],
   imports: [
     BrowserModule,

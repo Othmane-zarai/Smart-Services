@@ -5,11 +5,17 @@ import { AboutComponent } from './Pages/about/about.component';
 import { ServiceComponent } from './Pages/service/service.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { LoginComponent } from './Pages/login/login.component';
+import { ProfileComponent } from './Pages/profile/profile.component';
+import { CommandesComponent } from './Pages/commandes/commandes.component';
 
 const routes: Routes = [
   {
     path:"",
     component:HomeComponent
+  },
+  {
+    path:"commandes",
+    component:CommandesComponent
   },
   {
     path:"login",
@@ -26,6 +32,10 @@ const routes: Routes = [
   {
     path:"commande",
     component:ContactComponent
+  },
+  {
+    path:"profile",
+    component:ProfileComponent
   }
 ]
 
