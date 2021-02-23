@@ -7,11 +7,16 @@ import { ContactComponent } from './Pages/contact/contact.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { ProfileComponent } from './Pages/profile/profile.component';
 import { CommandesComponent } from './Pages/commandes/commandes.component';
+import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.component';
 
 const routes: Routes = [
   {
     path:"",
     component:HomeComponent
+  },
+  {
+    path:"/adminDemandes",
+    component:AdminDemandsComponent
   },
   {
     path:"commandes",

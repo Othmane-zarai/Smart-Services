@@ -40,8 +40,10 @@
                             <a href="/service" class="nav-item nav-link" >Services</a>
                             <a href="/commande" class="nav-item nav-link">Contacte</a>
                             
-                           
-                            <a href="/login" class="btn">{{buttonVal}}</a>
+                           <div *ngIf="isLogin;else connecter">
+                            <a href="/profile" class="btn" >{{username}}</a>
+                           </div>
+                           <ng-template #connecter><a href="/login" class="btn" >Se connecter</a></ng-template>
                         </div>
                     </div>
                 </div>

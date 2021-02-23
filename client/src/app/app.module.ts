@@ -15,13 +15,14 @@ import { BasicAuthHttpInterceptorService } from './services/basic-auth-http-inte
 import { ProfileComponent } from './Pages/profile/profile.component';
 import { CommandesComponent } from './Pages/commandes/commandes.component';
 import { EditProfileComponent } from './Pages/edit-profile/edit-profile.component';
+import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,  
     ServiceComponent, 
-    HeaderComponent, FooterComponent, LoginComponent, ContactComponent, ProfileComponent, CommandesComponent, EditProfileComponent
+    HeaderComponent, FooterComponent, LoginComponent, ContactComponent, ProfileComponent, CommandesComponent, EditProfileComponent, AdminDemandsComponent
   ],
   imports: [
     BrowserModule,
