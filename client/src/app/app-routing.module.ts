@@ -10,52 +10,62 @@ import { CommandesComponent } from './Pages/commandes/commandes.component';
 import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.component';
 import { AssistantProfileComponent } from './Pages/assistant-profile/assistant-profile.component';
 import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
+import { DemandsComponent } from './Pages/demands/demands.component';
+import { QrcodeComponent } from './Pages/qrcode/qrcode.component';
 
 const routes: Routes = [
   {
-    path:"",
-    component:HomeComponent
+    path: '',
+    component: HomeComponent,
   },
   {
-    path:"adminDemandes",
-    component:AdminDemandsComponent
+    path: 'adminDemandes',
+    component: AdminDemandsComponent,
   },
   {
-    path:"commandes",
-    component:CommandesComponent
+    path: 'commandes',
+    component: CommandesComponent,
   },
   {
-    path:"login",
-    component:LoginComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path:"about",
-    component:AboutComponent
+    path: 'about',
+    component: AboutComponent,
   },
   {
-    path:"service",
-    component:ServiceComponent
+    path: 'service',
+    component: ServiceComponent,
   },
   {
-    path:"commande",
-    component:ContactComponent
+    path: 'commande',
+    component: ContactComponent,
   },
   {
-    path:"profile",
-    component:ProfileComponent
+    path: 'profile',
+    component: ProfileComponent,
   },
   {
-    path:"assistantprofile",
-    component:AssistantProfileComponent
+    path: 'assistantprofile',
+    component: AssistantProfileComponent,
   },
   {
-    path:"adminprofile",
-    component:AdminProfileComponent
-  }
-]
+    path: 'adminprofile',
+    component: AdminProfileComponent,
+  },
+  {
+    path: 'demands',
+    component: DemandsComponent,
+  },
+  {
+    path: 'qrcode',
+    component: QrcodeComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

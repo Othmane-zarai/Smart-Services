@@ -18,13 +18,27 @@ import { EditProfileComponent } from './Pages/edit-profile/edit-profile.componen
 import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.component';
 import { AssistantProfileComponent } from './Pages/assistant-profile/assistant-profile.component';
 import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
+import { DemandsComponent } from './Pages/demands/demands.component';
+import { QrcodeComponent } from './Pages/qrcode/qrcode.component';
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,  
-    ServiceComponent, 
-    HeaderComponent, FooterComponent, LoginComponent, ContactComponent, ProfileComponent, CommandesComponent, EditProfileComponent, AdminDemandsComponent, AssistantProfileComponent, AdminProfileComponent
+    AboutComponent,
+    ServiceComponent,
+    HeaderComponent,
+    FooterComponent,
+    LoginComponent,
+    ContactComponent,
+    ProfileComponent,
+    CommandesComponent,
+    EditProfileComponent,
+    AdminDemandsComponent,
+    AssistantProfileComponent,
+    AdminProfileComponent,
+    DemandsComponent,
+    QrcodeComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,10 +46,15 @@ import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.compo
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    NgxQRCodeModule,
   ],
-  providers: [{
-    provide:HTTP_INTERCEPTORS, useClass:BasicAuthHttpInterceptorService, multi:true
-  }],
-  bootstrap: [AppComponent]
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: BasicAuthHttpInterceptorService,
+      multi: true,
+    },
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
