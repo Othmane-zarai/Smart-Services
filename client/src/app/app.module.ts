@@ -19,8 +19,8 @@ import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.compo
 import { AssistantProfileComponent } from './Pages/assistant-profile/assistant-profile.component';
 import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
 import { DemandsComponent } from './Pages/demands/demands.component';
-import { QrcodeComponent } from './Pages/qrcode/qrcode.component';
-import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+//import { QrcodeComponent } from './Pages/qrcode/qrcode.component';
+//import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +38,7 @@ import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
     AssistantProfileComponent,
     AdminProfileComponent,
     DemandsComponent,
-    QrcodeComponent,
+    //QrcodeComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +46,7 @@ import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgxQRCodeModule,
+    //NgxQRCodeModule,
   ],
   providers: [
     {

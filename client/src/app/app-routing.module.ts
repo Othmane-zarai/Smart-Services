@@ -11,7 +11,7 @@ import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.compo
 import { AssistantProfileComponent } from './Pages/assistant-profile/assistant-profile.component';
 import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
 import { DemandsComponent } from './Pages/demands/demands.component';
-import { QrcodeComponent } from './Pages/qrcode/qrcode.component';
+//import { QrcodeComponent } from './Pages/qrcode/qrcode.component';
 
 const routes: Routes = [
   {
@@ -57,11 +57,8 @@ const routes: Routes = [
   {
     path: 'demands',
     component: DemandsComponent,
-  },
-  {
-    path: 'qrcode',
-    component: QrcodeComponent,
-  },
+  }
+  
 ];
 
 @NgModule({
