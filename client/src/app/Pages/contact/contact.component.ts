@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClaimService } from 'src/app/services/claim.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
-  constructor() { }
+  name='';
+  email='';
+  subject='';
+  message='';
+  isAdded = false;
+  constructor(private claim:ClaimService) { }
 
   ngOnInit(): void {
+  }
+  addClaim(){
+    this.claim.addClaim(
+      this.name,
+      this.email,
+      this.subject,
+      this.message
+    ).subscribe(
+      data => {
+        this.isAdded = true;
+        console.log(data);
+      },
+      error => {
+        console.log(error);
+      }
+    )
   }
 
 }

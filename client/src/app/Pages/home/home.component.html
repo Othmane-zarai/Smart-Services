@@ -15,8 +15,8 @@
                     <div class="form">
                         <h3>Commander un service</h3>
                         <form>
-                            <input class="form-control" type="text" placeholder="Nom complet">
-                            <input class="form-control" type="text" placeholder="Numero de telephone">
+                            <input class="form-control" type="text" placeholder="Nom complet"/>
+                            <input class="form-control" type="text" pInputText [(ngModel)]="address" placeholder="Address"/>
                             <div class="control-group">
                                 <select class="custom-select">
                                     <option selected>choisir un service</option>
@@ -25,8 +25,8 @@
                                     <option value="3">Serrurerie</option>
                                 </select>
                             </div>
-                            <textarea class="form-control" placeholder="Description"></textarea>
-                            <button class="btn btn-block">Commander</button>
+                            <input class="form-control" pInputText [(ngModel)]="description" placeholder="Description"/>
+                            <button class="btn btn-block" (click)="addRequest()">Commander</button>
                         </form>
                     </div>
                 </div>
