@@ -12,11 +12,19 @@ const User = mongoose.model("User",mongoose.Schema({
     type:String,
     required:true
   },
+  role:{
+    type:String,
+    required:true
+  },
   name:{
     type:String,
     required:false
   },
   lastName:{
+    type:String,
+    required:false
+  },
+  telephone:{
     type:String,
     required:false
   }

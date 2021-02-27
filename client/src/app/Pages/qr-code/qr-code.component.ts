@@ -8,12 +8,24 @@ import { QrcodeService } from 'src/app/services/qrcode.service';
   styleUrls: ['./qr-code.component.css']
 })
 export class QrCodeComponent implements OnInit {
-
+  username="";
+  qrData:string | undefined;
   constructor(private service:QrcodeService,private userService:AuthentificationServiceService) { }
 
   ngOnInit(): void {
     if(this.userService.isUserLoggedIn()){
-      
+      if(sessionStorage.getItem('username') != null){
+        this.username = <string> sessionStorage.getItem('username');
+        this.service.generateQrCode(this.username).subscribe(
+          data => {
+            this.qrData = data.body.message;
+            console.log(this.qrData);
+          },
+          error => {
+            console.log(error);
+          }
+        )
+      }
     }
   }
 }

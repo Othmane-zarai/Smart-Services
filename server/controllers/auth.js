@@ -9,6 +9,7 @@ exports.signup = (req, res) => {
     username:req.body.username,
     email:req.body.email,
     password:bcrypt.hashSync(req.body.password, 8),
+    role:"assistant",
     name:req.body.name,
     lastName:req.body.lastName
   });
@@ -50,6 +51,7 @@ exports.signin = (req, res) => {
       id: user._id,
       username: user.username,
       email:user.email,
+      role:user.role,
       accessToken:token
     });
   });

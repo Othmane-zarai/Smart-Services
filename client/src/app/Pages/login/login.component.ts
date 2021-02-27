@@ -19,9 +19,17 @@ export class LoginComponent implements OnInit {
   checkLogin(){
     this.loginService.authenticate(this.username,this.password).subscribe(
       data => {
-        this.router.navigate(["/service"]);
-        console.log(data);
-        this.invalidLogin = false;
+        if(data.body.role==="client"){
+          this.router.navigate(["/service"]);
+          //console.log(data);
+          this.invalidLogin = false;
+        }
+        if(data.body.role==="admin"){
+          this.router.navigate(["/admin"]);
+        }
+        if(data.body.role==="assistant"){
+          this.router.navigate(["/assistant"]);
+        }
       },
       error => {
         this.invalidLogin = true;
@@ -32,8 +40,7 @@ export class LoginComponent implements OnInit {
   signUp(){
     this.loginService.signup(this.username,this.email,this.password).subscribe(
       data => {
-        this.router.navigate(["/service"]);
-        console.log(data);
+        this.router.navigate(["/login"]);
       },
       error => {
         console.log(error);

@@ -1,11 +1,12 @@
 .container-qr{
   margin: 0 auto;
+  margin-left: 170px;
   width: 80%;
   padding: 10px;
   height: 70vh;
 }
 .container-qr img {
-    margin: 120px;
+    margin: 0 auto;
     padding: 20px;
 }
 .container-qr input {
@@ -16,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 22px;
     font-size: 13px;
     height: 5vh;
     text-transform: uppercase;

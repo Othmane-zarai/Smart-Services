@@ -10,11 +10,12 @@ export class QrcodeService {
   constructor(private http:HttpClient) { }
   generateQrCode(username:string){
     return this.http
-      .post(baseURL+"",{
+      .post(baseURL+"/generateCode",{
         'username':username
       },{observe:'response'})
       .pipe(
         map((res:any) => {
+          console.log(res);
           return res;
         })
       );

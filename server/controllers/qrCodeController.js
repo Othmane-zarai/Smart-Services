@@ -35,7 +35,7 @@ exports.generateCode = function(req,res){
            if(request){
                return res.status(200).json({
                    status:200,
-                   message:request.code
+                   message:request.code[0]
                });
            }
        });
