@@ -19,8 +19,13 @@ import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.compo
 import { AssistantProfileComponent } from './Pages/assistant-profile/assistant-profile.component';
 import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
 import { DemandsComponent } from './Pages/demands/demands.component';
-//import { QrcodeComponent } from './Pages/qrcode/qrcode.component';
-//import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+import { RequestComponent } from './Pages/request/request.component';
+import { AssistantListComponent } from './Pages/assistant-list/assistant-list.component';
+import { QrCodeComponent } from './Pages/qr-code/qr-code.component';
+import { QRCodeModule } from 'angularx-qrcode';
+import { AssistantsComponent } from './Pages/assistants/assistants.component';
+import { AdminheaderComponent } from './Components/adminheader/adminheader.component';
+import { AssistantheaderComponent } from './Components/assistantheader/assistantheader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +43,12 @@ import { DemandsComponent } from './Pages/demands/demands.component';
     AssistantProfileComponent,
     AdminProfileComponent,
     DemandsComponent,
-    //QrcodeComponent,
+    RequestComponent,
+    AssistantListComponent,
+    QrCodeComponent,
+    AssistantsComponent,
+    AdminheaderComponent,
+    AssistantheaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +56,7 @@ import { DemandsComponent } from './Pages/demands/demands.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    //NgxQRCodeModule,
+    QRCodeModule
   ],
   providers: [
     {

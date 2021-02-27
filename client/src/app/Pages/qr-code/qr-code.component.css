@@ -1,0 +1,35 @@
+.container-qr{
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  height: 70vh;
+}
+.container-qr img {
+    margin: 120px;
+    padding: 20px;
+}
+.container-qr input {
+    margin-left: 150px;
+    width: 25%;
+}
+.container-qr button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    font-size: 13px;
+    height: 5vh;
+    text-transform: uppercase;
+    color: #00539C;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: .3s;
+}
+.container-qr button:hover{
+    color: #000000;
+    background: #2011c2;
+}
+.container-qr input:focus{
+    border: 2px solid rgb(22, 114, 199);
+}

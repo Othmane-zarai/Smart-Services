@@ -243,7 +243,7 @@ a:focus {
 
 .header .navbar .btn:hover {
     color: #000000;
-    background: #2011c2;
+    background: #4938ff;
 }
 
 .header .navbar .btn i {
@@ -571,7 +571,7 @@ a:focus {
     color: #000000;
     border: none;
     border-radius: 5px;
-    background: #0d0658;
+    background: #382ad3;
     transition: .3s;
 }
 
@@ -1750,7 +1750,7 @@ a:focus {
     margin-bottom: 30px;
     font-size: 20px;
     font-weight: 400;
-    color: #FFD662;
+    color: #0d0658;
     text-transform: uppercase;
     letter-spacing: 1px;
 }

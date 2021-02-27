@@ -5,7 +5,7 @@ module.exports = function(app){
         qrCodeController.checkCode
     );
     app.post(
-        "/generateQRCode",
-        qrCodeController.generateQrCode
+        "/generateCode",
+        qrCodeController.generateCode
     );
 }

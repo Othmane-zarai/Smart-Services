@@ -11,13 +11,24 @@ import { AdminDemandsComponent } from './Pages/admin-demands/admin-demands.compo
 import { AssistantProfileComponent } from './Pages/assistant-profile/assistant-profile.component';
 import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
 import { DemandsComponent } from './Pages/demands/demands.component';
+import { AssistantListComponent } from './Pages/assistant-list/assistant-list.component';
+import { QrCodeComponent } from './Pages/qr-code/qr-code.component';
+import { AdminheaderComponent } from './Components/adminheader/adminheader.component';
+import { AssistantheaderComponent } from './Components/assistantheader/assistantheader.component';
 
-//import { QrcodeComponent } from './Pages/qrcode/qrcode.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path:'assistant',
+    component:AssistantheaderComponent
+  },
+  {
+    path:'admin',
+    component:AdminheaderComponent
   },
   {
     path: 'adminDemandes',
@@ -58,6 +69,14 @@ const routes: Routes = [
   {
     path: 'demands',
     component: DemandsComponent,
+  },
+  {
+    path:"assistants",
+    component:AssistantListComponent
+  },
+  {
+    path:"qrcode",
+    component:QrCodeComponent
   }
 ];
 

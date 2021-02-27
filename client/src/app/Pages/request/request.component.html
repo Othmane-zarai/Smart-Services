@@ -1,0 +1,30 @@
+<div class="header home">
+    <div class="container-fluid">
+        <div class="hero row align-items-center">
+            <div class="col-md-7">
+                <h2>La plateforme des artisans de confiance
+                </h2>
+                <h2><span></span> </h2>
+                <p>Comme 96%* de nos clients déjà satisfaits par nos services
+
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div class="form">
+                    <h3>Commander un service</h3>
+                        <input class="form-control" type="text" pInputText [(ngModel)]="address" placeholder="Address"/>
+                        <div class="control-group">
+                            <select class="custom-select">
+                                <option selected>choisir un service</option>
+                                <option value="1">Plomberie</option>
+                                <option value="2">Electricité</option>
+                                <option value="3">Serrurerie</option>
+                            </select>
+                        </div>
+                        <input class="form-control" pInputText [(ngModel)]="description" placeholder="Description"/>
+                        <button class="btn btn-block" (click)="addRequest()">Commander</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

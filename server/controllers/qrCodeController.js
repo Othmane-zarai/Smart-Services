@@ -1,5 +1,4 @@
 const Request = require('../models/Request');
-const printQRCode = require('../QRCode/QRCodeGeneration');
 exports.checkCode = function(req,res){
     const query = Request.findOne({username:req.body.username});
     query.exec(function(err,request){
@@ -24,7 +23,7 @@ exports.checkCode = function(req,res){
         }
     });
 };
-exports.generateQrCode = function(req,res){
+exports.generateCode = function(req,res){
     Request.findOne({username:req.body.username})
        .exec(function(err,request){
            if(err){
@@ -36,7 +35,7 @@ exports.generateQrCode = function(req,res){
            if(request){
                return res.status(200).json({
                    status:200,
-                   message: printQRCode(request.code)
+                   message:request.code
                });
            }
        });
