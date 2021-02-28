@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-demands.component.css']
 })
 export class AdminDemandsComponent implements OnInit {
-
+  services=["plomberie","electricite","serrurerie"];
   constructor() { }
 
   ngOnInit(): void {

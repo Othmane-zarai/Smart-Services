@@ -13,8 +13,9 @@ import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.compo
 import { DemandsComponent } from './Pages/demands/demands.component';
 import { AssistantListComponent } from './Pages/assistant-list/assistant-list.component';
 import { QrCodeComponent } from './Pages/qr-code/qr-code.component';
-import { AdminheaderComponent } from './Components/adminheader/adminheader.component';
 import { AssistantheaderComponent } from './Components/assistantheader/assistantheader.component';
+import { AssistantReceivedComponent } from './Pages/assistant-received/assistant-received.component';
+import { AssistantDoneComponent } from './Pages/assistant-done/assistant-done.component';
 
 
 const routes: Routes = [
@@ -23,12 +24,16 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path:'assistant',
-    component:AssistantheaderComponent
+    path:'assistantreceived',
+    component:AssistantReceivedComponent
   },
   {
-    path:'admin',
-    component:AdminheaderComponent
+    path:'assistantdone',
+    component:AssistantDoneComponent
+  },
+  {
+    path:'assistant',
+    component:AssistantheaderComponent
   },
   {
     path: 'adminDemandes',

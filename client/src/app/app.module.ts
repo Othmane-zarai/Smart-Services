@@ -26,6 +26,8 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { AssistantsComponent } from './Pages/assistants/assistants.component';
 import { AdminheaderComponent } from './Components/adminheader/adminheader.component';
 import { AssistantheaderComponent } from './Components/assistantheader/assistantheader.component';
+import { AssistantReceivedComponent } from './Pages/assistant-received/assistant-received.component';
+import { AssistantDoneComponent } from './Pages/assistant-done/assistant-done.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +51,8 @@ import { AssistantheaderComponent } from './Components/assistantheader/assistant
     AssistantsComponent,
     AdminheaderComponent,
     AssistantheaderComponent,
+    AssistantReceivedComponent,
+    AssistantDoneComponent,
   ],
   imports: [
     BrowserModule,
