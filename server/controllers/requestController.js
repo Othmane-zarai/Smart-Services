@@ -8,7 +8,8 @@ exports.create = function(req, res){
          lng: req.body.lng,
          address:req.body.address,
          description: req.body.description,
-         code:generateRandomCode
+         code:generateRandomCode,
+         status:"not done"
      });
      request.save()
          .then(function(createdRequest){

@@ -6,10 +6,12 @@
               <input
                        type="text"
                        placeholder="Entrez le code"
+                       pInputText
+                       [(ngModel)]="codeInput"
                        required="required"
               />
               <div class="container-qr button">
-                     <button>commander</button>
+                     <button (click)="checkCode()">commander</button>
               </div>
        </div>
        

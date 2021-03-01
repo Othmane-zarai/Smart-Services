@@ -1,6 +1,6 @@
 const Request = require('../models/Request');
 exports.checkCode = function(req,res){
-    const query = Request.findOne({username:req.body.username});
+    const query = Request.findOne({username:req.body.username,status:"not done"});
     query.exec(function(err,request){
         if(err){ return res.status(400).json({
             status:400,
@@ -24,7 +24,7 @@ exports.checkCode = function(req,res){
     });
 };
 exports.generateCode = function(req,res){
-    Request.findOne({username:req.body.username})
+    Request.findOne({username:req.body.username,status:"not done"})
        .exec(function(err,request){
            if(err){
                return res.status(400).json({

@@ -25,10 +25,10 @@ export class LoginComponent implements OnInit {
           this.invalidLogin = false;
         }
         if(data.body.role==="admin"){
-          this.router.navigate(["/admin"]);
+          this.router.navigate(["/adminDemandes"]);
         }
         if(data.body.role==="assistant"){
-          this.router.navigate(["/assistant"]);
+          this.router.navigate(["/assistantprofile"]);
         }
       },
       error => {

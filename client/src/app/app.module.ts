@@ -28,6 +28,8 @@ import { AdminheaderComponent } from './Components/adminheader/adminheader.compo
 import { AssistantheaderComponent } from './Components/assistantheader/assistantheader.component';
 import { AssistantReceivedComponent } from './Pages/assistant-received/assistant-received.component';
 import { AssistantDoneComponent } from './Pages/assistant-done/assistant-done.component';
+import { ClaimAdminComponent } from './Pages/claim-admin/claim-admin.component';
+import { DemandReportComponent } from './Pages/demand-report/demand-report.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +55,8 @@ import { AssistantDoneComponent } from './Pages/assistant-done/assistant-done.co
     AssistantheaderComponent,
     AssistantReceivedComponent,
     AssistantDoneComponent,
+    ClaimAdminComponent,
+    DemandReportComponent,
   ],
   imports: [
     BrowserModule,

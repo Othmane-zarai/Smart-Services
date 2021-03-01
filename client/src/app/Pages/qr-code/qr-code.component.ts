@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthentificationServiceService } from 'src/app/services/authentification-service.service';
 import { QrcodeService } from 'src/app/services/qrcode.service';
 
@@ -10,7 +11,8 @@ import { QrcodeService } from 'src/app/services/qrcode.service';
 export class QrCodeComponent implements OnInit {
   username="";
   qrData:string | undefined;
-  constructor(private service:QrcodeService,private userService:AuthentificationServiceService) { }
+  codeInput="";
+  constructor(private service:QrcodeService,private userService:AuthentificationServiceService,private router:Router) { }
 
   ngOnInit(): void {
     if(this.userService.isUserLoggedIn()){
@@ -26,6 +28,16 @@ export class QrCodeComponent implements OnInit {
           }
         )
       }
+    }
+  }
+  checkCode(){
+    if(this.userService.isUserLoggedIn()){
+      this.service.checkCode(this.codeInput).subscribe(
+        data => {
+          console.log(data);
+          this.router.navigate(["/demandeReport"]);
+        }
+      )
     }
   }
 }

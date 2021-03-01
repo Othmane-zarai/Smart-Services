@@ -16,12 +16,22 @@ import { QrCodeComponent } from './Pages/qr-code/qr-code.component';
 import { AssistantheaderComponent } from './Components/assistantheader/assistantheader.component';
 import { AssistantReceivedComponent } from './Pages/assistant-received/assistant-received.component';
 import { AssistantDoneComponent } from './Pages/assistant-done/assistant-done.component';
+import { ClaimAdminComponent } from './Pages/claim-admin/claim-admin.component';
+import { DemandReportComponent } from './Pages/demand-report/demand-report.component';
 
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path:'demandeReport',
+    component:DemandReportComponent
+  },
+  {
+    path:'claimAdmin',
+    component:ClaimAdminComponent
   },
   {
     path:'assistantreceived',

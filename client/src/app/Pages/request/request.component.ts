@@ -16,7 +16,6 @@ export class RequestComponent implements OnInit {
   }
   addRequest(){
     this.noCommande=false;
-    /*
     this.request.addRequest(
       "plomberie",
       this.address,
@@ -28,6 +27,6 @@ export class RequestComponent implements OnInit {
       error => {
         console.log(error);
       }
-    )*/
+    )
   }
 }

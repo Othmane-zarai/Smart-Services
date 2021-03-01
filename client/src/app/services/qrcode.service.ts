@@ -20,4 +20,17 @@ export class QrcodeService {
         })
       );
   }
+  checkCode(code:string){
+    return this.http
+      .post(baseURL+"/checkCode",{
+        'username':sessionStorage.getItem('username'),
+        'code':code
+      },{observe:'response'})
+      .pipe(
+        map((res:any) => {
+          console.log(res);
+          return res;
+        })
+      )
+  }
 }

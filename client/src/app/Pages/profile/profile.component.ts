@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthentificationServiceService } from 'src/app/services/authentification-service.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
   isProfile = true;
-  constructor() { }
+  constructor(private router: Router, private service: AuthentificationServiceService) { }
 
   ngOnInit(): void {
   }
@@ -16,5 +18,9 @@ export class ProfileComponent implements OnInit {
   }
   goToEditProfile(){
     this.isProfile=true;
+  }
+  deconnecter(){
+    this.service.logOut();
+    this.router.navigate(['/login']);
   }
 }

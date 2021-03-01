@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthentificationServiceService } from 'src/app/services/authentification-service.service';
 
 @Component({
   selector: 'app-adminheader',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminheaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router,private service:AuthentificationServiceService) { }
 
   ngOnInit(): void {
   }
-
+  deconnecter(){
+    this.service.logOut();
+    this.router.navigate(['/login']);
+  }
 }

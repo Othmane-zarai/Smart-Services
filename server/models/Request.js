@@ -32,6 +32,10 @@ const RequestSchema = mongoose.Schema({
     date:{
         type:Date,
         default:Date.now
+    },
+    status:{
+        type:String,
+        required:false
     }
 });
 const Request = mongoose.model('Request',RequestSchema);

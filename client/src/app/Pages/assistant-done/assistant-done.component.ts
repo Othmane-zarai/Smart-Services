@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class AssistantDoneComponent implements OnInit {
   services=["plomberie","electricite","serrurerie"];
   constructor() { }
-
   ngOnInit(): void {
   }
 
