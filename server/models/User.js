@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const User = mongoose.model("User",mongoose.Schema({
+const extend = require('mongoose-schema-extend');
+const UserSchema = mongoose.Schema({
   username:{
     type:String,
     required:true
@@ -27,7 +28,17 @@ const User = mongoose.model("User",mongoose.Schema({
   telephone:{
     type:String,
     required:false
+  },
+  serviceType:{
+    type:String,
+    required:false
+  },
+  imgUrl:{
+    type:String,
+    required:false
   }
-}));
+});
+const User = mongoose.model('User',UserSchema);
 module.exports = User;
+
 

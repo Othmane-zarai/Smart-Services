@@ -38,6 +38,7 @@ require('./routes/request.routes')(app);
 require('./routes/response.routes')(app);
 require('./routes/claim.routes')(app);
 require('./routes/qrcode.routes')(app);
+require('./routes/img.routes')(app);
 var port = 3000;
 app.listen(port, function () {
   console.info('Server Started on');

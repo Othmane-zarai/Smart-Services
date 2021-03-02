@@ -36,6 +36,10 @@ const RequestSchema = mongoose.Schema({
     status:{
         type:String,
         required:false
+    },
+    imgUrl:{
+        type:String,
+        required:false
     }
 });
 const Request = mongoose.model('Request',RequestSchema);

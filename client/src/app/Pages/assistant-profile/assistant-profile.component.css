@@ -7,7 +7,26 @@ body{
 .main-body {
   padding: 15px;
 }
-
+.col-sm-4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.col-sm-4 .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 22px;
+    font-size: 13px;
+    height: 5vh;
+    text-transform: uppercase;
+    color: #00539C;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: .3s;
+}
 .nav-link {
   color: rgb(74, 85, 104);
 }

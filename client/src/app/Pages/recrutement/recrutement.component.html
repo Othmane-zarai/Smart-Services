@@ -2,20 +2,21 @@
 <div class="wrapper">
     <div class="container">
       <div class="section-header">
-        <h2>Demande</h2>
+        <h2>Recrutement</h2>
       </div>
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
           <div class="card">
             <div class="card-body tab-content">
               <div class="tab-pane active" id="profile">
-                <h6>INFORMATIONS DEMANDE</h6>
+                <h6>Formulaire de candidature</h6>
                 <hr>
                 <form>
                   <div class="form-group">
                     <label for="fullName">Nom Complet:</label>
                     <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Nom Complet" value="Test test">
-                    <small id="fullNameHelp" class="form-text text-muted">username</small>
+                    <small id="fullNameHelp" class="form-text text-muted">Nom complet</small>
                   </div>
                   <div class="form-group">
                     <label for="email">email:</label>
@@ -34,21 +35,24 @@
                     <input type="text" class="form-control" id="url" placeholder="service" value="plomberie">
                   </div>
                   <div class="form-group">
-                    <label for="email">Description:</label>
+                    <label for="email">Motivation:</label>
                     <input type="text" class="form-control" id="url" placeholder="description" value="motivé">
                   </div>
-                  <button type="button" class="btn btn-primary" (click)="addImgUpload()">Voir vos demandes</button>
+                  <div class="form-group">
+                    <label for="email">CV:</label>
+                    <input type="file" class="form-control" id="url">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Lettre de motivation:</label>
+                    <input type="file" class="form-control" id="url">
+                  </div>
+                  <button type="button" class="btn btn-primary">Valider</button>
                 </form>
               </div>            
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="assimg">
-            <img  src="img" width="300" height="250" alt="Etat demande" style="border-radius: 50%;">
-            <input type="file" [(ngModel)]="filePath" class="btn btn-primary" placeholder="demande image">
-          </div>
-        </div>
       </div>
     </div>
 </div>
+  

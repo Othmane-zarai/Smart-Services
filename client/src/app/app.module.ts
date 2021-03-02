@@ -30,6 +30,7 @@ import { AssistantReceivedComponent } from './Pages/assistant-received/assistant
 import { AssistantDoneComponent } from './Pages/assistant-done/assistant-done.component';
 import { ClaimAdminComponent } from './Pages/claim-admin/claim-admin.component';
 import { DemandReportComponent } from './Pages/demand-report/demand-report.component';
+import { RecrutementComponent } from './Pages/recrutement/recrutement.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +58,7 @@ import { DemandReportComponent } from './Pages/demand-report/demand-report.compo
     AssistantDoneComponent,
     ClaimAdminComponent,
     DemandReportComponent,
+    RecrutementComponent,
   ],
   imports: [
     BrowserModule,

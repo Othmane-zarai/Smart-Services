@@ -18,12 +18,15 @@ import { AssistantReceivedComponent } from './Pages/assistant-received/assistant
 import { AssistantDoneComponent } from './Pages/assistant-done/assistant-done.component';
 import { ClaimAdminComponent } from './Pages/claim-admin/claim-admin.component';
 import { DemandReportComponent } from './Pages/demand-report/demand-report.component';
-
-
+import { RecrutementComponent } from './Pages/recrutement/recrutement.component';
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path:'recrutement',
+    component:RecrutementComponent
   },
   {
     path:'demandeReport',
