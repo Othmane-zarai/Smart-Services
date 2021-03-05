@@ -9,7 +9,7 @@ exports.create = function(req, res){
          address:req.body.address,
          description: req.body.description,
          code:generateRandomCode,
-         status:"not done"
+         price:200
      });
      request.save()
          .then(function(createdRequest){
@@ -25,6 +25,14 @@ exports.create = function(req, res){
                  message: err.message
              });
          });
+}
+exports.getRequest = function(req,res){
+    Request.findOne({username:req.body.username,status:"not done"})
+        .then(function(request){
+            return res.status(200).json({
+                request
+            });
+        })
 }
 exports.update = function(req, res){
     Request.findById(req.params.id)

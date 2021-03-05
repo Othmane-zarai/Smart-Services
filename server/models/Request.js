@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 const RequestSchema = mongoose.Schema({
     username:{
         type:String,
@@ -33,12 +32,16 @@ const RequestSchema = mongoose.Schema({
         type:Date,
         default:Date.now
     },
-    status:{
+    assistant:{
         type:String,
         required:false
     },
-    imgUrl:{
+    status:{
         type:String,
+        default:"not done"
+    },
+    price:{
+        type:Number,
         required:false
     }
 });

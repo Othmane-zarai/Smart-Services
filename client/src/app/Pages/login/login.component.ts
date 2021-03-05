@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(["/adminDemandes"]);
         }
         if(data.body.role==="assistant"){
+          sessionStorage.setItem('serviceType',data.body.serviceType);
           this.router.navigate(["/assistantprofile"]);
         }
       },

@@ -20,19 +20,19 @@
                                     </thead>
                                 </table>
                             </div>
-            
+                            <div *ngFor="let request of requests">
                             <div class="table100-body js-pscroll">
                                 <table>
                                     <tbody>
                                         <tr class="row100 body">
-                                            <td class="cell100 column1">Réparation de chasse d'eau</td>
-                                            <td class="cell100 column4">Avenue France Agdal Rabat, Immeuble 21 Appartement N 1</td>
-                                            <td class="cell100 column5">Validé</td>
+                                            <td class="cell100 column1">{{request.description}}</td>
+                                            <td class="cell100 column4">{{request.address}}</td>
+                                            <td class="cell100 column5">{{request.status}}</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-            
+                            </div>
                         </div>
                     </div>
                 </div>

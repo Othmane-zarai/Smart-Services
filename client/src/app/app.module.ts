@@ -31,6 +31,7 @@ import { AssistantDoneComponent } from './Pages/assistant-done/assistant-done.co
 import { ClaimAdminComponent } from './Pages/claim-admin/claim-admin.component';
 import { DemandReportComponent } from './Pages/demand-report/demand-report.component';
 import { RecrutementComponent } from './Pages/recrutement/recrutement.component';
+import { ValidateRequestComponent } from './Pages/validate-request/validate-request.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,6 +60,7 @@ import { RecrutementComponent } from './Pages/recrutement/recrutement.component'
     ClaimAdminComponent,
     DemandReportComponent,
     RecrutementComponent,
+    ValidateRequestComponent,
   ],
   imports: [
     BrowserModule,

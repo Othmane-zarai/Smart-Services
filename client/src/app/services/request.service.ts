@@ -15,12 +15,20 @@ export class RequestService {
         'serviceType':serviceType,
         'address':address,
         'description':description,
-        'code':"ZH125"
       })
       .pipe(
         map((res:any) => {
           return res;
         })
       );
+  }
+  getRequest(username:string){
+    return this.http.post(baseURL+"/request/get",{
+      username:username
+    }).pipe(
+      map((res:any) => {
+        return res;
+      })
+    )
   }
 }

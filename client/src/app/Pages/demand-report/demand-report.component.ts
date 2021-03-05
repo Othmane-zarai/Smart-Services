@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ImgUploadService } from 'src/app/services/img-upload.service';
+import { Router } from '@angular/router';
+import { RequestService } from 'src/app/services/request.service';
 
 @Component({
   selector: 'app-demand-report',
@@ -7,21 +8,35 @@ import { ImgUploadService } from 'src/app/services/img-upload.service';
   styleUrls: ['./demand-report.component.css']
 })
 export class DemandReportComponent implements OnInit {
-  filePath!: File;
-  img!: File;
-  constructor(private imgup:ImgUploadService) { 
+  username="";
+  address="";
+  date:Date | undefined;
+  serviceType="";
+  description="";
+  prix:number | undefined;
+  status="";
+  constructor(private request:RequestService,private router:Router) { 
   }
 
   ngOnInit(): void {
-  }
-  addImgUpload(){
-    this.imgup.addRequestImg(this.filePath).subscribe(
+    this.username = <string> sessionStorage.getItem('username');
+    this.request.getRequest(this.username).subscribe(
       data => {
-        this.img=this.filePath;
+        this.address = data.request.address;
+        this.date = data.request.date;
+        this.serviceType = data.request.serviceType;
+        this.description = data.request.description;
+        this.prix =data.request.price;
+        this.status = data.request.status;
+        console.log(this.address);
       },
       err => {
         console.log(err);
       }
     )
   }
+  redirectProfile(){
+    this.router.navigate(["/profile"]);
+  }
+
 }
